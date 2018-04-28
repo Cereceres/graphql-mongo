@@ -1,0 +1,24 @@
+{
+  "name": "graphql-mongo",
+  "version": "1.0.0",
+  "description": "module to wrap mongodb using graphql",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test --exit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cereceres/graphql-mongo.git"
+  },
+  "author": "Jesus Edel Cereceres",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cereceres/graphql-mongo/issues"
+  },
+  "homepage": "https://github.com/Cereceres/graphql-mongo#readme",
+  "dependencies": {
+    "graphql": "^0.13.2",
+    "graphql-tools": "^2.24.0",
+    "mongodb": "^3.0.7"
+  }
+}
