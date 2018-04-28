@@ -65,11 +65,23 @@ await mongoGraph(`
 ```
 
 
-# API mongoGQL(graphqlSchema) -> Promise(mongoGraph(graphqlQueryString))
+## API mongoGQL(graphqlSchema) -> Promise(mongoGraph(graphqlQueryString))
 
-# mongoGraph(graphqlQueryString) -> Promise
+## mongoGraph(graphqlQueryString) -> Promise
 
-# Insert, Update and Delete
+## Insert, Update and Delete
 
 Any mutation with name insert{collectionName}, update{collectionName} or delete{collectionName}
 are mapped to a insert, update or delete in collectionName
+
+## insert{Collection}(args)
+
+Try to get input param named from args, if not take the args as the input.
+
+## update{Collection}(args)
+
+Try to get input param named from args and query param named.
+
+## delete{Collection}(args)
+
+Try to get query param named from args, if not take the args as the query.
