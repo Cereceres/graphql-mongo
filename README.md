@@ -65,7 +65,7 @@ await mongoGraph(`
 ```
 
 
-## API mongoGQL(graphqlSchema) -> Promise(mongoGraph(graphqlQueryString))
+## API mongoGQL(graphqlSchema, urlToConnectMongo) -> Promise(mongoGraph(graphqlQueryString))
 
 ## mongoGraph(graphqlQueryString) -> Promise
 
@@ -85,3 +85,7 @@ Try to get input param named from args and query param named.
 ## delete{Collection}(args)
 
 Try to get query param named from args, if not take the args as the query.
+
+## Config
+
+MONGO_URL environment var to mongo url config

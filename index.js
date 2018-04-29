@@ -10,8 +10,8 @@ const executableSchema = (typeDefs) => makeExecutableSchema({
 });
 
 
-module.exports = async(typeDefs) => {
+module.exports = async(typeDefs, url) => {
     const schema = executableSchema(typeDefs);
-    await database.connect();
+    await database.connect(url);
     return (query) => graphql(schema, query);
 };

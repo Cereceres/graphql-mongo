@@ -1,6 +1,6 @@
 {
   "name": "mongogql",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "module to wrap mongodb using graphql",
   "main": "index.js",
   "scripts": {
